@@ -7,10 +7,6 @@ import java.util.Scanner;
 public class Bank_Application 
 {        
    static Scanner input = new Scanner(System.in);
-    private static String balance;
-    private double amount;
-    private double withdraw;
-    
     
     //Show balance method !!!
     static void showBalance(double balance)
@@ -29,7 +25,8 @@ public class Bank_Application
        
        if (amount <= 0) 
        {
-           System.out.println("Amount can not be negative");    
+           System.out.println("Amount can not be negative"); 
+           return 0;
        }
        else
        {
@@ -51,7 +48,7 @@ public class Bank_Application
        amount = input.nextDouble();
         
        
-       if (balance < amount) 
+       if (balance <= amount) 
        {
            System.out.println("Insufficient funds");  
            return 0;
@@ -100,7 +97,6 @@ public class Bank_Application
         {
             //checking account balance
             case 1:
-                System.out.println("Balance: " );
                 showBalance(balance);
                 break;
              
