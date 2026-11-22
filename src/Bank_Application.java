@@ -31,7 +31,7 @@ public class Bank_Application
        else
        {
            System.out.println("deposit successful");
-           System.out.println("Amount depositted: " + amount);
+           System.out.println("Amount deposited: " + amount);
           
        }
        return amount;
