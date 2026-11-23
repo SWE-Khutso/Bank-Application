@@ -103,11 +103,13 @@ public class Bank_Application
             //withdrawing funds from account    
             case 2:
              balance -= withdraw(balance);
+             System.out.println("Current Balance: " + balance);
                 break;
             
             //depositing funds into account    
             case 3:
            balance += deposit();
+           System.out.println("Current Balance: " + balance);
                 break;
              
                 //diplayiing exit and thank you message
